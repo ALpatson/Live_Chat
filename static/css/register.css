@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url("../images/login.jpg") center/cover no-repeat;
+}
+
+.register-container {
+    background: white;
+    border-radius: 20px;
+    padding: 50px 60px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    width: 450px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 18px 20px 18px 50px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #1f1e1e;
+    box-shadow: 0 0 10px rgba(16, 16, 16, 0.2);
+}
+
+.input-group::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+.input-group.username::before {
+    content: '';
+    background-image: url("../images/user.png");
+}
+
+.input-group.email::before {
+    content: '';
+    background-image: url("../images/email.png");
+}
+
+.input-group.password::before {
+    content: '';
+    background-image: url("../images/password.png");
+}
+
+.register-btn {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(135deg, #171517, #111011);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.register-btn:hover {
+    background: linear-gradient(135deg, #090909, #080808);
+    box-shadow: 0 5px 20px rgba(46, 44, 45, 0.4);
+    transform: translateY(-2px);
+}
+
+.messages {
+    margin-bottom: 20px;
+}
+
+.alert {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.alert-error {
+    background-color: #fee;
+    color: rgb(83, 80, 80);
+    border: 1px solid #fcc;
+}
+
+.login-link {
+    margin-top: 25px;
+    color: #666;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #686366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
